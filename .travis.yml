@@ -13,6 +13,10 @@ cache:
 script:
   - node server.js
 
+  services:
+  - redis-server
+  - mongodb
+
 deploy:
   provider: pages
   skip_cleanup: true
